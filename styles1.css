@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #585c68; 
+}
+.resume {
+    width: 800px;
+    height: auto;
+    display: block;
+    display: flex;
+    margin: auto;
+    color: #fff;
+    justify-content: center;
+   
+}
+
+.left_menu {
+   display: block;
+   width: 280px;
+    background: #0bb5f4;
+    padding: 0 0px;
+}
+
+.profile {
+    width: 280px;
+}
+
+#avatar {
+    /*padding: 20px*/
+    width: 280px;
+    /*border-radius: 0 0 30px 30px;*/
+}
+
+.colon {
+    margin: 10px;
+    padding: 0 10px 0 10px;
+}
+
+.name {
+    padding: 10px 0 15px 15px;
+    font-size: 110%;
+}
+
+.contact {
+    /*padding: 0 15px 0 15px;*/
+}
+
+.student {
+    color: #fff;
+    padding: 0 0 10px 15px;
+    font-size: 90%;
+    text-align: left;
+    border-bottom: 2px solid #b1eaff;
+    
+}
+
+.student1 {
+    color: #b1eaff;
+    padding: 0 0 0 15px;
+    height: 10px;
+}
+
+.numb {
+    padding: 0 0 3px 0px;
+}
+
+.skills {
+    padding: 0 0 0 15px;
+    margin: 10px 0 30px 0;
+    color: #fff;
+}
+
+.msk {
+    color: #b1eaff;
+    font-size: 90%;
+    height: 15px;
+}
+
+.mski {
+    height: 8px;
+}
+
+/* */
+
+.right_menu {
+    background-color: rgb(247, 247, 247);
+    width: 350px;
+}
+
+.content {
+    /*background-color: rgb(19, 5, 5);*/
+    margin: 35px;
+}
+
+.cont1 {
+    color: #555555;
+    border-top: 2px solid #92cadf;
+    border-bottom: 2px solid #92cadf;
+    font-size: 95%;
+    
+}
+
+.cont2 {
+    color: #555555;
+    border-bottom: 2px solid #92cadf;
+    font-size: 95%;
+}
+
+.hh1 {
+    text-transform: uppercase;
+    color: #409abb;
+    font-weight: bold;
+    height: 10px;
+}
+
+.hh2 {
+  color: #000000;  
+  font-weight: 500;
+  height: 5px;
+}
+
+.hh3 {
+  /*height: 25px;*/
+  /*margin: 0 0 0 0;
+  padding: 0 0 0 0;*/
+  height: 20px;
+}
