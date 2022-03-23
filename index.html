@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Dmitry Shulzhytski CV</title>
+	<link rel="shortcut icon" href="assets/icons/favicon.svg">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	
+	<div class="background">
+
+			<header>
+				<nav>
+					<ul>
+						<li><a href="#contact"><span class="violet">&lt;</span>Contact<span class="violet">></span></a></li>
+						<li><a href="#about"><span class="violet">&lt;</span>About me<span class="violet">></span></a></li>
+						<li><a href="#skills"><span class="violet">&lt;</span>Skills<span class="violet">></span></a></li>
+						<li><a href="#code"><span class="violet">&lt;</span>Code<span class="violet">></span></a></li>
+						<li><a href="#education"><span class="violet">&lt;</span>Education<span class="violet">></span></a></li>
+						<li><a href="#languages"><span class="violet">&lt;</span>Languages<span class="violet">></span></a></li>
+						<li><a href="#projects"><span class="violet">&lt;</span>Projects<span class="violet">></span></a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<section class="main">
+
+				<div class="user_block">
+					<article class="user">
+						<img src="assets/images/avatar.jpg" alt="avatar">
+						<h2>Dmitry&nbsp;<span class="violet">Shulzhytski</span></h2>
+						<h3>Front-end developer (Beginner)</h3>
+					</article>
+				</div>
+
+				<div class="contact_block" id="contact">
+					<div class="contsct">
+						<div class="location">
+							<p>Location</p>
+							<a href="https://goo.gl/maps/gSP6SwyFchq71SF5A">Minsk, Belarus</a>
+						</div>
+
+						<div class="phone_number">
+							<p>Phone number</p>
+							<a href="tel:+375298540327">+375 29 854-03-27</a>
+						</div>
+
+						<div class="email">
+							<p>Email</p>
+							<a href="mailto:d.shulzhytski@mail.ru">d.shulzhytski@mail.ru</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="about" id="about">
+				<div class="about_title">
+					<h3>About me</h3>
+				</div>
+
+				<div class="about_block">
+					<article>
+						<p>One of my main goals in life is to gain knowledge in the field of programming, because in the modern world at every step you can find a thing that requires writing code. I have a technical education that allows me to understand computing operations faster. My environment considers me a concentrated and attentive person.</p>
+					</article>
+				</div>
+			</section>
+
+			<section class="skills" id="skills">
+				<div class="skills_title">
+					<h3>Skills</h3>
+				</div>
+
+				<div class="skills_block">
+					<div class="bl html">
+						<span>HTML <span class="violet">80%</span></span>
+						<div class="skill_level">
+							<div class="level_html"></div>
+						</div>
+					</div>
+
+					<div class="bl css">
+						<span>CSS/SASS <span class="violet">70%</span></span>
+						<div class="skill_level">
+							<div class="level_css"></div>
+						</div>
+					</div>
+
+					<div class="bl js">
+						<span>JS <span class="violet">60%</span></span>
+						<div class="skill_level">
+							<div class="level_js"></div>
+						</div>
+					</div>
+
+					<div class="bl git">
+						<span>GIT <span class="violet">50%</span></span>
+						<div class="skill_level">
+							<div class="level_git"></div>
+						</div>
+					</div>
+
+					<div class="bl react">
+						<span>React <span class="violet">10%</span></span>
+						<div class="skill_level">
+							<div class="level_react"></div>
+						</div>
+					</div>
+
+					<div class="bl figma">
+						<span>Figma <span class="violet">60%</span></span>
+						<div class="skill_level">
+							<div class="level_figma"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="code" id="code">
+				<div class="code_title">
+					<h3>Code example</h3>
+				</div>
+
+				<div class="code_block">
+					<pre>
+						<code>
+<span class="violet">let</span> numberActiveCards = 0;
+
+<span class="violet">function</span> checkCards() {
+	<span class="violet">let</span> cardRotate = [];
+	<span class="violet">const</span> cards = document.querySelectorAll('.main_Block .block1');
+	<span class="violet">const</span> backs = document.querySelectorAll('.main_Block .back');
+	cards.forEach(card => {
+		<span class="violet">if</span> (card.classList.contains("rotate_card")) {
+			cardRotate.push(card.lastElementChild.style.backgroundImage);
+		}
+	});
+	<span class="violet">if</span> (cardRotate[0] == cardRotate[1]) {
+		cards.forEach(card => {
+			<span class="violet">if</span> (card.classList.contains("rotate_card")) {
+				card.lastElementChild.classList.add('filter_green');
+				card.classList.remove('rotate_card');
+			card.classList.add('rotate_card_active');
+			
+			}
+		});
+		numberActiveCards = numberActiveCards + 2;
+		<span class="violet">if</span> (numberActiveCards == cardsSize*cardsSize) {
+			userWin();
+		}
+	} <span class="violet">else</span> {
+		cards.forEach(card => {
+			<span class="violet">if</span> (card.classList.contains("rotate_card")) {
+				card.lastElementChild.classList.add('filter_red');
+				setTimeout(() => card.classList.remove('rotate_card'), 1300);
+				setTimeout(() => card.lastElementChild.classList.remove('filter_red'), 1800);
+			}
+		});
+	}
+}
+						</code>
+					</pre>
+				</div>
+			</section>
+
+			<section class="education" id="education">
+				<div class="education_title">
+					<h3>Education</h3>
+				</div>
+
+				<div class="education_block">
+					<p>University:</p>
+					<a href="https://bntu.by/">Belarusian National Technical University</a>
+				</div>
+			</section>
+
+			<section class="languages" id="languages">
+				<div class="languages_title">
+					<h3>Languages</h3>
+				</div>
+
+				<div class="languages_block">
+					<p>My English level is A2. Now I practicing my English by speaking with native speakers</p>
+				</div>
+			</section>
+
+			<section class="projects" id="projects">
+				<div class="projects_title">
+					<h3>Education projects</h3>
+				</div>
+
+				<div class="projects_block">
+					<a href="https://messenger.dmitrysh.repl.co/"><div class="proj proj1"></div></a>
+					<a href="https://zoo-q1-adaptive.dmitrysh.repl.co/index.html"><div class="proj proj2"></div></a>
+					<a href="https://boosted-usa.dmitrysh.repl.co/"><div class="proj proj3"></div></a>
+					<a href="https://moments.dmitrysh.repl.co/"><div class="proj proj4"></div></a>
+					<a href="https://rolling-scopes-school.github.io/dmitry-shul-JSFEPRESCHOOL/portfolio/"><div class="proj proj5"></div></a>
+					<a href="https://rolling-scopes-school.github.io/dmitry-shul-JSFEPRESCHOOL/random-jokes/"><div class="proj proj6"></div></a>
+					<a href="https://rolling-scopes-school.github.io/dmitry-shul-JSFEPRESCHOOL/tic-tac-toe/"><div class="proj proj7"></div></a>
+					<a href="https://rolling-scopes-school.github.io/dmitry-shul-JSFEPRESCHOOL/memory-game/"><div class="proj proj8"></div></a>
+					<a href="https://rolling-scopes-school.github.io/dmitry-shul-JSFEPRESCHOOL/random-game/"><div class="proj proj9"></div></a>
+				</div>
+			</section>
+
+			<footer>
+				<div class="links">
+					<span class="ds2022">2022 Dmitry Shulzhytski</span>
+
+					<div class="link">
+						<a href="https://t.me/radeonkoo"><span>Telegram</span></a>
+						<a href="https://github.com/dmitry-shul"><span>GitHub</span></a>
+						<a href="https://rs.school/js/"><img src="assets/icons/rs_school_js.svg" alt="rsschool"></a>
+					</div>
+				</div>
+			</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
